@@ -10,29 +10,29 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeViewController" customModule="MultiModuleRefactor" customModuleProvider="target">
             <connections>
-                <outlet property="titleLabel" destination="awV-oC-f2h" id="iXS-1Q-nmX"/>
-                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="tableView" destination="eIz-Fz-Qeu" id="9DU-nv-WO9"/>
+                <outlet property="view" destination="iN0-l3-epB" id="TL5-aA-luv"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
             <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="awV-oC-f2h">
-                    <rect key="frame" x="175.66666666666666" y="415.66666666666669" width="42" height="21"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                    <nil key="textColor"/>
-                    <nil key="highlightedColor"/>
-                </label>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="eIz-Fz-Qeu">
+                    <rect key="frame" x="0.0" y="59" width="393" height="759"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                </tableView>
             </subviews>
-            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
-                <constraint firstItem="awV-oC-f2h" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="ctF-3q-95g"/>
-                <constraint firstItem="awV-oC-f2h" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="h1Z-E0-cmD"/>
+                <constraint firstItem="eIz-Fz-Qeu" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="4LH-CA-GdI"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="eIz-Fz-Qeu" secondAttribute="bottom" id="CBU-0R-nJi"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="eIz-Fz-Qeu" secondAttribute="trailing" id="bHl-TU-pI7"/>
+                <constraint firstItem="eIz-Fz-Qeu" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="es2-hN-IiO"/>
             </constraints>
-            <point key="canvasLocation" x="4" y="20"/>
+            <point key="canvasLocation" x="-8" y="20"/>
         </view>
     </objects>
     <resources>

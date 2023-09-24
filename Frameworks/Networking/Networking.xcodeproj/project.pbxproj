@@ -11,6 +11,7 @@
 		E16515CF2AC021A200CE4AA5 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = E16515CE2AC021A200CE4AA5 /* Logger.swift */; };
 		E16515D22AC021FD00CE4AA5 /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = E16515D12AC021FD00CE4AA5 /* Configuration.swift */; };
 		E16515D72AC022F700CE4AA5 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E16515D62AC022F700CE4AA5 /* NetworkManager.swift */; };
+		E16515DC2AC0662400CE4AA5 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = E16515DB2AC0662400CE4AA5 /* Constants.swift */; };
 		E18DD75E2ABE851B00CA8AB7 /* Networking.docc in Sources */ = {isa = PBXBuildFile; fileRef = E18DD75D2ABE851B00CA8AB7 /* Networking.docc */; };
 		E18DD7642ABE851B00CA8AB7 /* Networking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E18DD7592ABE851B00CA8AB7 /* Networking.framework */; };
 		E18DD76A2ABE851C00CA8AB7 /* Networking.h in Headers */ = {isa = PBXBuildFile; fileRef = E18DD75C2ABE851B00CA8AB7 /* Networking.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -49,6 +50,7 @@
 		E16515CE2AC021A200CE4AA5 /* Logger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
 		E16515D12AC021FD00CE4AA5 /* Configuration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
 		E16515D62AC022F700CE4AA5 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		E16515DB2AC0662400CE4AA5 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		E18DD7592ABE851B00CA8AB7 /* Networking.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Networking.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E18DD75C2ABE851B00CA8AB7 /* Networking.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Networking.h; sourceTree = "<group>"; };
 		E18DD75D2ABE851B00CA8AB7 /* Networking.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = Networking.docc; sourceTree = "<group>"; };
@@ -120,6 +122,14 @@
 			path = NetworkManager;
 			sourceTree = "<group>";
 		};
+		E16515DA2AC0661400CE4AA5 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				E16515DB2AC0662400CE4AA5 /* Constants.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
 		E18DD74F2ABE851B00CA8AB7 = {
 			isa = PBXGroup;
 			children = (
@@ -142,6 +152,7 @@
 		E18DD75B2ABE851B00CA8AB7 /* Networking */ = {
 			isa = PBXGroup;
 			children = (
+				E16515DA2AC0661400CE4AA5 /* Constants */,
 				E16515D52AC022E500CE4AA5 /* NetworkManager */,
 				E16515D02AC021CA00CE4AA5 /* NetworkConfiguration */,
 				E16515CD2AC0219A00CE4AA5 /* Log */,
@@ -288,6 +299,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E16515D72AC022F700CE4AA5 /* NetworkManager.swift in Sources */,
+				E16515DC2AC0662400CE4AA5 /* Constants.swift in Sources */,
 				E16515D22AC021FD00CE4AA5 /* Configuration.swift in Sources */,
 				E18DD75E2ABE851B00CA8AB7 /* Networking.docc in Sources */,
 				E16515CF2AC021A200CE4AA5 /* Logger.swift in Sources */,

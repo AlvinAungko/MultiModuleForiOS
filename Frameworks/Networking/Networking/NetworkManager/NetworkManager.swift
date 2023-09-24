@@ -10,8 +10,8 @@ import Alamofire
 
 open class BaseNetworking {
     open func fetchData<M: Decodable>(configuration: Configuration,
-                                 responseType: M.Type,
-                                 completion: @escaping (Result<M, ServiceError>) -> Void) {
+                                      responseType: M.Type,
+                                      completion: @escaping (Result<M, ServiceError>) -> Void) {
         let parameters = generateParams(task: configuration.task)
         let url = configuration.baseURL + configuration.path.escape()
         guard var components = URLComponents(string: url) else {
@@ -90,6 +90,7 @@ private extension BaseNetworking {
         request.httpMethod = method
         request.setValue("application/json", forHTTPHeaderField: "Content-Type")
         request.setValue("application/json", forHTTPHeaderField: "Accept")
+        request.setValue("Bearer 35d715a8897b1c23d077afc0ba2dd4001e6289ff4fc405d151eeb2bb0016a892d43ce810b7f9b7aa42b50f1e9ece0db01e5c7ca5093203ed476afe5a57554d5bb30bccca7b4ab0656657f444465327b4326c0c9da13010e33be3ccf0226188a6eccfccfa688001634c14d4862ca496c5ea1cef72943143685fc8a104854c308b", forHTTPHeaderField: "Authorization")
         request.httpBody = nil
         
         for (key, value) in headers ?? [:] {
