@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:Frameworks/UIComponent/UIComponent.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:Frameworks/Networking/Networking.xcodeproj">
    </FileRef>
    <FileRef

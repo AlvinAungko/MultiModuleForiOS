@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		A023FE8A8A2DFCF53D678C82 /* Pods_MultiModuleRefactor.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A521D58725CC92E6EEA22823 /* Pods_MultiModuleRefactor.framework */; };
+		E16515B12AC0121C00CE4AA5 /* UIComponent.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E16515B02AC0121C00CE4AA5 /* UIComponent.framework */; };
+		E16515B22AC0121C00CE4AA5 /* UIComponent.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E16515B02AC0121C00CE4AA5 /* UIComponent.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		E16515CB2AC019D500CE4AA5 /* Utilities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E16515CA2AC019D500CE4AA5 /* Utilities.framework */; };
+		E16515CC2AC019D500CE4AA5 /* Utilities.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E16515CA2AC019D500CE4AA5 /* Utilities.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		E18DD7962ABE85E500CA8AB7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E18DD7952ABE85E500CA8AB7 /* AppDelegate.swift */; };
 		E18DD79F2ABE85E900CA8AB7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E18DD79E2ABE85E900CA8AB7 /* Assets.xcassets */; };
 		E18DD7A22ABE85E900CA8AB7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E18DD7A02ABE85E900CA8AB7 /* LaunchScreen.storyboard */; };
@@ -24,6 +28,8 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				E16515B22AC0121C00CE4AA5 /* UIComponent.framework in Embed Frameworks */,
+				E16515CC2AC019D500CE4AA5 /* Utilities.framework in Embed Frameworks */,
 				E18DD7B12ABE8C2A00CA8AB7 /* Networking.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
@@ -35,6 +41,8 @@
 		518733786C9801EA3B362B53 /* Pods-MultiModuleRefactor.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MultiModuleRefactor.debug.xcconfig"; path = "Target Support Files/Pods-MultiModuleRefactor/Pods-MultiModuleRefactor.debug.xcconfig"; sourceTree = "<group>"; };
 		A0BFD93B1D5AAE80C24E621B /* Pods-MultiModuleRefactor.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MultiModuleRefactor.release.xcconfig"; path = "Target Support Files/Pods-MultiModuleRefactor/Pods-MultiModuleRefactor.release.xcconfig"; sourceTree = "<group>"; };
 		A521D58725CC92E6EEA22823 /* Pods_MultiModuleRefactor.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MultiModuleRefactor.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E16515B02AC0121C00CE4AA5 /* UIComponent.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = UIComponent.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E16515CA2AC019D500CE4AA5 /* Utilities.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Utilities.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E18DD7922ABE85E500CA8AB7 /* MultiModuleRefactor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MultiModuleRefactor.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E18DD7952ABE85E500CA8AB7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E18DD79E2ABE85E900CA8AB7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -51,7 +59,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				E18DD7B02ABE8C2A00CA8AB7 /* Networking.framework in Frameworks */,
+				E16515B12AC0121C00CE4AA5 /* UIComponent.framework in Frameworks */,
 				A023FE8A8A2DFCF53D678C82 /* Pods_MultiModuleRefactor.framework in Frameworks */,
+				E16515CB2AC019D500CE4AA5 /* Utilities.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,6 +80,8 @@
 		320612D794E365BF9A795970 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				E16515CA2AC019D500CE4AA5 /* Utilities.framework */,
+				E16515B02AC0121C00CE4AA5 /* UIComponent.framework */,
 				E18DD7AF2ABE8C2900CA8AB7 /* Networking.framework */,
 				A521D58725CC92E6EEA22823 /* Pods_MultiModuleRefactor.framework */,
 			);

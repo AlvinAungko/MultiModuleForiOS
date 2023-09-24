@@ -6,13 +6,18 @@
 //
 
 import UIKit
+import UIComponent
 
-class HomeViewController: UIViewController {
-
+class HomeViewController: BaseViewController {
+    
     @IBOutlet weak var titleLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        titleLabel.text = "Multi Module Architecture"
+    }
+    
+    override func setupUI() {
+        super.setupUI()
+        titleLabel.text = "Fly"
     }
 }
