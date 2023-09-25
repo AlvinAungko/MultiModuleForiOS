@@ -11,6 +11,7 @@
 //
 
 import UIKit
+import Networking
 
 enum Home {
     
@@ -20,7 +21,11 @@ enum Home {
         }
         
         struct ViewModel {
-            var studentList: [StudentNetworkModel]?
+            var studentList: [StudentNetworkModel?]
+        }
+        
+        struct Failure {
+            var errorMessage: ServiceError
         }
     }
 }

@@ -13,7 +13,7 @@
 import UIKit
 
 protocol HomeBusinessLogic {
-//    func doSomething(request: Home.Something.Request)
+    func fetchListOfStudents()
 }
 
 protocol HomeDataStore {
@@ -24,11 +24,14 @@ class HomeInteractor: HomeBusinessLogic, HomeDataStore {
     
     var presenter: HomePresentationLogic?
     var worker: HomeWorker?
-//    func doSomething(request: Home.Something.Request) {
-//        worker = HomeWorker()
-//        worker?.doSomeWork()
-//
-//        let response = Home.Something.Response()
-//        presenter?.presentSomething(response: response)
-//    }
+    
+    func fetchListOfStudents() {
+        worker?.fetchStudents(networkConfig: .listOfStudents, completion: { [weak self] response in
+            guard let self = self else { return }
+            self.presenter?.presentStudentList(response: Home.Something.ViewModel.init(studentList: response))
+        }, failure: { [weak self] failure in
+            guard let self = self else { return }
+            self.presenter?.presentError(err: failure)
+        })
+    }
 }

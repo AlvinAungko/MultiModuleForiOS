@@ -8,6 +8,6 @@
 import Foundation
 
 open class Constants {
-    public static let baseUrl = "http://192.168.100.9:1337/"
+    public static let baseUrl = "http://10.0.45.54:1337/"
     private init() {}
 }

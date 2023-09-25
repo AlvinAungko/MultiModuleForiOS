@@ -11,16 +11,21 @@
 //
 
 import UIKit
+import Networking
 
 protocol HomePresentationLogic {
-    func presentSomething(response: Home.Something.Response)
+    func presentStudentList(response: Home.Something.ViewModel)
+    func presentError(err: ServiceError)
 }
 
 class HomePresenter: HomePresentationLogic {
-    weak var viewController: HomeDisplayLogic?
     
-    func presentSomething(response: Home.Something.Response) {
-        let viewModel = Home.Something.ViewModel()
-        viewController?.displaySomething(viewModel: viewModel)
+    weak var viewController: HomeDisplayLogic?
+    func presentStudentList(response: Home.Something.ViewModel) {
+        viewController?.presentStudentList(response: response)
+    }
+    
+    func presentError(err: ServiceError) {
+        viewController?.presentError(err: err)
     }
 }

@@ -13,9 +13,11 @@
 import UIKit
 import UIComponent
 import Utilities
+import Networking
 
 protocol HomeDisplayLogic: AnyObject {
-    func displaySomething(viewModel: Home.Something.ViewModel)
+    func presentStudentList(response: Home.Something.ViewModel)
+    func presentError(err: ServiceError)
 }
 
 class HomeViewController: BaseViewController, HomeDisplayLogic {
@@ -39,9 +41,11 @@ class HomeViewController: BaseViewController, HomeDisplayLogic {
         let interactor = HomeInteractor()
         let presenter = HomePresenter()
         let router = HomeRouter()
+        let worker = HomeWorker()
         self.interactor = interactor
         self.router = router
         interactor.presenter = presenter
+        interactor.worker = worker
         presenter.viewController = self
         router.viewController = self
         router.dataStore = interactor
@@ -49,7 +53,7 @@ class HomeViewController: BaseViewController, HomeDisplayLogic {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        doSomething()
+        interactor?.fetchListOfStudents()
     }
     
     override func setupUI() {
@@ -57,15 +61,30 @@ class HomeViewController: BaseViewController, HomeDisplayLogic {
         setupTableView()
     }
     
-    func doSomething() {}
-    
-    func displaySomething(viewModel: Home.Something.ViewModel) {}
-    
     func setupTableView() {
         tableView.dataSource = self
         tableView.delegate = self
         tableView.backgroundColor = .clear
         tableView.contentInset = .zero
         tableView.registerCells(StudentTableViewCell.className)
+    }
+    
+    func presentStudentList(response: Home.Something.ViewModel) {
+        response.studentList.forEach {
+            if let student = $0 {
+                debugPrint(student.studentName ?? "")
+            }
+        }
+    }
+    
+    func presentError(err: ServiceError) {
+        switch err.issueCode {
+        case .SESSION_EXPIRE:
+            debugPrint("Expire Session.")
+        case .CUSTOM_MES(let msg): debugPrint("\(msg)")
+        case .SESSION_NOT_FOUND: debugPrint("SESSION_NOT_FOUND")
+        case .TIME_OUT: debugPrint("TIME_OUT")
+        case .UNAUTHORIZED: debugPrint("UNAUTHORIZED")
+        }
     }
 }
