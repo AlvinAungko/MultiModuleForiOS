@@ -23,6 +23,7 @@ protocol HomeDisplayLogic: AnyObject {
 class HomeViewController: BaseViewController, HomeDisplayLogic {
     
     @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var titleLabel: UILabel!
     
     var interactor: HomeBusinessLogic?
     var router: (HomeRoutingLogic & HomeDataPassing)?
@@ -59,6 +60,7 @@ class HomeViewController: BaseViewController, HomeDisplayLogic {
     override func setupUI() {
         super.setupUI()
         setupTableView()
+        titleLabel.font = .poppinsBold(ofSize: 20)
     }
     
     func setupTableView() {

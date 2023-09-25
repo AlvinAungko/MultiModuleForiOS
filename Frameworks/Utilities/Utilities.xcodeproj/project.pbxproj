@@ -12,6 +12,7 @@
 		E16515BB2AC0147300CE4AA5 /* UITableView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E16515BA2AC0147300CE4AA5 /* UITableView+Extension.swift */; };
 		E16515BD2AC0152100CE4AA5 /* UICollectionView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E16515BC2AC0152100CE4AA5 /* UICollectionView+Extension.swift */; };
 		E16515D42AC0226900CE4AA5 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E16515D32AC0226900CE4AA5 /* String+Extension.swift */; };
+		E16516442AC17EEB00CE4AA5 /* Font+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E16516432AC17EEB00CE4AA5 /* Font+Extension.swift */; };
 		E18DD7822ABE857000CA8AB7 /* Utilities.docc in Sources */ = {isa = PBXBuildFile; fileRef = E18DD7812ABE857000CA8AB7 /* Utilities.docc */; };
 		E18DD7832ABE857000CA8AB7 /* Utilities.h in Headers */ = {isa = PBXBuildFile; fileRef = E18DD7802ABE857000CA8AB7 /* Utilities.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F8C24FF64BD563D41594BA6F /* Pods_Utilities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F1F3423D27F31528EC6AC4F /* Pods_Utilities.framework */; };
@@ -25,6 +26,7 @@
 		E16515BA2AC0147300CE4AA5 /* UITableView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Extension.swift"; sourceTree = "<group>"; };
 		E16515BC2AC0152100CE4AA5 /* UICollectionView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionView+Extension.swift"; sourceTree = "<group>"; };
 		E16515D32AC0226900CE4AA5 /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
+		E16516432AC17EEB00CE4AA5 /* Font+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Font+Extension.swift"; sourceTree = "<group>"; };
 		E18DD77D2ABE857000CA8AB7 /* Utilities.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Utilities.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E18DD7802ABE857000CA8AB7 /* Utilities.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Utilities.h; sourceTree = "<group>"; };
 		E18DD7812ABE857000CA8AB7 /* Utilities.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = Utilities.docc; sourceTree = "<group>"; };
@@ -76,6 +78,7 @@
 			children = (
 				E16515B82AC013CC00CE4AA5 /* NSObject+Extension.swift */,
 				E16515D32AC0226900CE4AA5 /* String+Extension.swift */,
+				E16516432AC17EEB00CE4AA5 /* Font+Extension.swift */,
 			);
 			path = Foundation;
 			sourceTree = "<group>";
@@ -219,6 +222,7 @@
 				E18DD7822ABE857000CA8AB7 /* Utilities.docc in Sources */,
 				E16515B92AC013CC00CE4AA5 /* NSObject+Extension.swift in Sources */,
 				E16515D42AC0226900CE4AA5 /* String+Extension.swift in Sources */,
+				E16516442AC17EEB00CE4AA5 /* Font+Extension.swift in Sources */,
 				E16515BB2AC0147300CE4AA5 /* UITableView+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

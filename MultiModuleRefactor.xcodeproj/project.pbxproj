@@ -23,6 +23,10 @@
 		E16515EF2AC0742700CE4AA5 /* HomeViewController+TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E16515EE2AC0742700CE4AA5 /* HomeViewController+TableView.swift */; };
 		E16515F22AC0769E00CE4AA5 /* StudentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E16515F02AC0769E00CE4AA5 /* StudentTableViewCell.swift */; };
 		E16515F32AC0769E00CE4AA5 /* StudentTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E16515F12AC0769E00CE4AA5 /* StudentTableViewCell.xib */; };
+		E16516302AC17E0000CE4AA5 /* Poppins-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E165161D2AC17DFF00CE4AA5 /* Poppins-Black.ttf */; };
+		E16516342AC17E0000CE4AA5 /* Poppins-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E16516212AC17DFF00CE4AA5 /* Poppins-Regular.ttf */; };
+		E16516372AC17E0000CE4AA5 /* Poppins-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E16516242AC17DFF00CE4AA5 /* Poppins-Bold.ttf */; };
+		E165163A2AC17E0000CE4AA5 /* Poppins-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E16516272AC17DFF00CE4AA5 /* Poppins-SemiBold.ttf */; };
 		E18DD7962ABE85E500CA8AB7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E18DD7952ABE85E500CA8AB7 /* AppDelegate.swift */; };
 		E18DD79F2ABE85E900CA8AB7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E18DD79E2ABE85E900CA8AB7 /* Assets.xcassets */; };
 		E18DD7A22ABE85E900CA8AB7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E18DD7A02ABE85E900CA8AB7 /* LaunchScreen.storyboard */; };
@@ -63,6 +67,10 @@
 		E16515EE2AC0742700CE4AA5 /* HomeViewController+TableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HomeViewController+TableView.swift"; sourceTree = "<group>"; };
 		E16515F02AC0769E00CE4AA5 /* StudentTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentTableViewCell.swift; sourceTree = "<group>"; };
 		E16515F12AC0769E00CE4AA5 /* StudentTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StudentTableViewCell.xib; sourceTree = "<group>"; };
+		E165161D2AC17DFF00CE4AA5 /* Poppins-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Black.ttf"; sourceTree = "<group>"; };
+		E16516212AC17DFF00CE4AA5 /* Poppins-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Regular.ttf"; sourceTree = "<group>"; };
+		E16516242AC17DFF00CE4AA5 /* Poppins-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Bold.ttf"; sourceTree = "<group>"; };
+		E16516272AC17DFF00CE4AA5 /* Poppins-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-SemiBold.ttf"; sourceTree = "<group>"; };
 		E18DD7922ABE85E500CA8AB7 /* MultiModuleRefactor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MultiModuleRefactor.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E18DD7952ABE85E500CA8AB7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E18DD79E2ABE85E900CA8AB7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -133,6 +141,17 @@
 			path = ViewController;
 			sourceTree = "<group>";
 		};
+		E165161C2AC17DE600CE4AA5 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				E165161D2AC17DFF00CE4AA5 /* Poppins-Black.ttf */,
+				E16516242AC17DFF00CE4AA5 /* Poppins-Bold.ttf */,
+				E16516212AC17DFF00CE4AA5 /* Poppins-Regular.ttf */,
+				E16516272AC17DFF00CE4AA5 /* Poppins-SemiBold.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
 		E18DD7892ABE85E500CA8AB7 = {
 			isa = PBXGroup;
 			children = (
@@ -154,6 +173,7 @@
 		E18DD7942ABE85E500CA8AB7 /* MultiModuleRefactor */ = {
 			isa = PBXGroup;
 			children = (
+				E165161C2AC17DE600CE4AA5 /* Fonts */,
 				E18DD7B32ABE8EC800CA8AB7 /* Features */,
 				E18DD7952ABE85E500CA8AB7 /* AppDelegate.swift */,
 				E18DD79E2ABE85E900CA8AB7 /* Assets.xcassets */,
@@ -247,10 +267,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E165163A2AC17E0000CE4AA5 /* Poppins-SemiBold.ttf in Resources */,
 				E18DD7A22ABE85E900CA8AB7 /* LaunchScreen.storyboard in Resources */,
 				E18DD79F2ABE85E900CA8AB7 /* Assets.xcassets in Resources */,
 				E16515EA2AC06A9D00CE4AA5 /* HomeViewController.xib in Resources */,
+				E16516342AC17E0000CE4AA5 /* Poppins-Regular.ttf in Resources */,
+				E16516372AC17E0000CE4AA5 /* Poppins-Bold.ttf in Resources */,
 				E16515F32AC0769E00CE4AA5 /* StudentTableViewCell.xib in Resources */,
+				E16516302AC17E0000CE4AA5 /* Poppins-Black.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

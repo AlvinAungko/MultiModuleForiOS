@@ -11,6 +11,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeViewController" customModule="MultiModuleRefactor" customModuleProvider="target">
             <connections>
                 <outlet property="tableView" destination="eIz-Fz-Qeu" id="9DU-nv-WO9"/>
+                <outlet property="titleLabel" destination="l27-yP-Jyb" id="QR4-Ee-awh"/>
                 <outlet property="view" destination="iN0-l3-epB" id="TL5-aA-luv"/>
             </connections>
         </placeholder>
@@ -20,17 +21,25 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="eIz-Fz-Qeu">
-                    <rect key="frame" x="0.0" y="59" width="393" height="759"/>
+                    <rect key="frame" x="0.0" y="59" width="393" height="709"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                 </tableView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l27-yP-Jyb">
+                    <rect key="frame" x="175.66666666666666" y="788" width="42" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
             </subviews>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
                 <constraint firstItem="eIz-Fz-Qeu" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="4LH-CA-GdI"/>
-                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="eIz-Fz-Qeu" secondAttribute="bottom" id="CBU-0R-nJi"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="eIz-Fz-Qeu" secondAttribute="bottom" constant="50" id="CBU-0R-nJi"/>
+                <constraint firstItem="l27-yP-Jyb" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="Xez-jX-5EI"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="eIz-Fz-Qeu" secondAttribute="trailing" id="bHl-TU-pI7"/>
                 <constraint firstItem="eIz-Fz-Qeu" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="es2-hN-IiO"/>
+                <constraint firstItem="l27-yP-Jyb" firstAttribute="top" secondItem="eIz-Fz-Qeu" secondAttribute="bottom" constant="20" id="jvV-Cf-dht"/>
             </constraints>
             <point key="canvasLocation" x="-8" y="20"/>
         </view>
