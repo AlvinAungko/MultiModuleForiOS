@@ -11,10 +11,23 @@
 //
 
 import UIKit
+import Networking
 
-class HomeWorker {
+class HomeWorker: BaseNetworking {
     
-    func doSomeWork() {
+    func fetchStudents(networkConfig: HomeNetworkConfiguration, completion: @escaping([StudentNetworkModel?]) -> Void, failure: @escaping(ServiceError) -> Void) {
         
+        self.fetchData(configuration: networkConfig, responseType: BaseStrapiModel<BaseEntityModel<StudentNetworkModel>>.self) { result in
+            switch result {
+            case .success(let response):
+                if let response = response.data {
+                    completion(response.map({ $0.attributes ?? nil }))
+                } else {
+                    failure(ServiceError(issueCode: .CUSTOM_MES(message: "Empty Students")))
+                }
+            case .failure(let issueCode):
+                failure(issueCode)
+            }
+        }
     }
 }

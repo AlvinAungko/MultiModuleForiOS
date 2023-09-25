@@ -12,23 +12,46 @@
 
 import UIKit
 
-enum Home
-{
-    enum Something
-    {
-        struct Request
-        {
-            
+enum Home {
+    
+    enum Something {
+        struct Response {
+            var statusCode: String
         }
         
-        struct Response
-        {
-            
-        }
-        
-        struct ViewModel
-        {
-            
+        struct ViewModel {
+            var studentList: [StudentNetworkModel]?
         }
     }
+}
+
+struct BaseStrapiModel<T: Codable>: Codable {
+    let data: [T]?
+    let meta: MetaModel?
+}
+
+struct BaseEntityModel<T: Codable>: Codable {
+    let id: Int?
+    let attributes: T?
+}
+
+struct StudentNetworkModel: Codable {
+    let studentTitle: String?
+    let studentName: String?
+    
+    enum CodingKeys: String, CodingKey {
+        case studentTitle = "student_title"
+        case studentName = "student_name"
+    }
+}
+
+struct MetaModel: Codable {
+    let pagination: PaginationModel?
+}
+
+struct PaginationModel: Codable {
+    let page: Int?
+    let pageSize: Int?
+    let pageCount: Int?
+    let total: Int?
 }

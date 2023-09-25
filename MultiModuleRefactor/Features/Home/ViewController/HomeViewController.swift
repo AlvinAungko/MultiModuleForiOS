@@ -57,14 +57,9 @@ class HomeViewController: BaseViewController, HomeDisplayLogic {
         setupTableView()
     }
     
-    func doSomething() {
-        let request = Home.Something.Request()
-        interactor?.doSomething(request: request)
-    }
+    func doSomething() {}
     
-    func displaySomething(viewModel: Home.Something.ViewModel) {
-        
-    }
+    func displaySomething(viewModel: Home.Something.ViewModel) {}
     
     func setupTableView() {
         tableView.dataSource = self

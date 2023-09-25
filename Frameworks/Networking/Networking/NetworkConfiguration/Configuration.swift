@@ -31,7 +31,13 @@ public protocol Configuration {
 }
 
 public struct ServiceError: Error {
-    let issueCode: IssueCode
+    
+    public let issueCode: IssueCode
+    
+    public init(issueCode: IssueCode) {
+        self.issueCode = issueCode
+    }
+    
     var message: String {
         return issueCode.message
     }
@@ -50,7 +56,7 @@ public struct ServiceError: Error {
 }
 
 // swiftlint:disable all
-enum IssueCode {
+public enum IssueCode {
     case UNAUTHORIZED
     case SESSION_EXPIRE
     case SESSION_NOT_FOUND
