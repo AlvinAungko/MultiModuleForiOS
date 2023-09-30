@@ -23,15 +23,20 @@
 		E16515EF2AC0742700CE4AA5 /* HomeViewController+TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E16515EE2AC0742700CE4AA5 /* HomeViewController+TableView.swift */; };
 		E16515F22AC0769E00CE4AA5 /* StudentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E16515F02AC0769E00CE4AA5 /* StudentTableViewCell.swift */; };
 		E16515F32AC0769E00CE4AA5 /* StudentTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E16515F12AC0769E00CE4AA5 /* StudentTableViewCell.xib */; };
-		E16516302AC17E0000CE4AA5 /* Poppins-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E165161D2AC17DFF00CE4AA5 /* Poppins-Black.ttf */; };
-		E16516342AC17E0000CE4AA5 /* Poppins-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E16516212AC17DFF00CE4AA5 /* Poppins-Regular.ttf */; };
-		E16516372AC17E0000CE4AA5 /* Poppins-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E16516242AC17DFF00CE4AA5 /* Poppins-Bold.ttf */; };
-		E165163A2AC17E0000CE4AA5 /* Poppins-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E16516272AC17DFF00CE4AA5 /* Poppins-SemiBold.ttf */; };
 		E18DD7962ABE85E500CA8AB7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E18DD7952ABE85E500CA8AB7 /* AppDelegate.swift */; };
 		E18DD79F2ABE85E900CA8AB7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E18DD79E2ABE85E900CA8AB7 /* Assets.xcassets */; };
 		E18DD7A22ABE85E900CA8AB7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E18DD7A02ABE85E900CA8AB7 /* LaunchScreen.storyboard */; };
 		E18DD7B02ABE8C2A00CA8AB7 /* Networking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E18DD7AF2ABE8C2900CA8AB7 /* Networking.framework */; };
 		E18DD7B12ABE8C2A00CA8AB7 /* Networking.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E18DD7AF2ABE8C2900CA8AB7 /* Networking.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		E1AF6D712AC40B49009EE1A0 /* CustomTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1AF6D702AC40B49009EE1A0 /* CustomTabBarController.swift */; };
+		E1AF6D732AC40BCD009EE1A0 /* CustomTabBar+Delegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1AF6D722AC40BCD009EE1A0 /* CustomTabBar+Delegate.swift */; };
+		E1AF6D882AC4244D009EE1A0 /* Poppins-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E1AF6D842AC4244C009EE1A0 /* Poppins-SemiBold.ttf */; };
+		E1AF6D892AC4244D009EE1A0 /* Poppins-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E1AF6D852AC4244C009EE1A0 /* Poppins-Regular.ttf */; };
+		E1AF6D8A2AC4244D009EE1A0 /* Poppins-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E1AF6D862AC4244D009EE1A0 /* Poppins-Bold.ttf */; };
+		E1AF6D8B2AC4244D009EE1A0 /* Poppins-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E1AF6D872AC4244D009EE1A0 /* Poppins-Black.ttf */; };
+		E1AF6D8F2AC427B6009EE1A0 /* TabBarItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1AF6D8E2AC427B6009EE1A0 /* TabBarItem.swift */; };
+		E1AF6D952AC51EEB009EE1A0 /* CourseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1AF6D932AC51EEB009EE1A0 /* CourseTableViewCell.swift */; };
+		E1AF6D962AC51EEB009EE1A0 /* CourseTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E1AF6D942AC51EEB009EE1A0 /* CourseTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -67,16 +72,21 @@
 		E16515EE2AC0742700CE4AA5 /* HomeViewController+TableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HomeViewController+TableView.swift"; sourceTree = "<group>"; };
 		E16515F02AC0769E00CE4AA5 /* StudentTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentTableViewCell.swift; sourceTree = "<group>"; };
 		E16515F12AC0769E00CE4AA5 /* StudentTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StudentTableViewCell.xib; sourceTree = "<group>"; };
-		E165161D2AC17DFF00CE4AA5 /* Poppins-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Black.ttf"; sourceTree = "<group>"; };
-		E16516212AC17DFF00CE4AA5 /* Poppins-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Regular.ttf"; sourceTree = "<group>"; };
-		E16516242AC17DFF00CE4AA5 /* Poppins-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Bold.ttf"; sourceTree = "<group>"; };
-		E16516272AC17DFF00CE4AA5 /* Poppins-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-SemiBold.ttf"; sourceTree = "<group>"; };
 		E18DD7922ABE85E500CA8AB7 /* MultiModuleRefactor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MultiModuleRefactor.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E18DD7952ABE85E500CA8AB7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E18DD79E2ABE85E900CA8AB7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E18DD7A12ABE85E900CA8AB7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E18DD7A32ABE85E900CA8AB7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E18DD7AF2ABE8C2900CA8AB7 /* Networking.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Networking.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E1AF6D702AC40B49009EE1A0 /* CustomTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBarController.swift; sourceTree = "<group>"; };
+		E1AF6D722AC40BCD009EE1A0 /* CustomTabBar+Delegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CustomTabBar+Delegate.swift"; sourceTree = "<group>"; };
+		E1AF6D842AC4244C009EE1A0 /* Poppins-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-SemiBold.ttf"; sourceTree = "<group>"; };
+		E1AF6D852AC4244C009EE1A0 /* Poppins-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Regular.ttf"; sourceTree = "<group>"; };
+		E1AF6D862AC4244D009EE1A0 /* Poppins-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Bold.ttf"; sourceTree = "<group>"; };
+		E1AF6D872AC4244D009EE1A0 /* Poppins-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Black.ttf"; sourceTree = "<group>"; };
+		E1AF6D8E2AC427B6009EE1A0 /* TabBarItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarItem.swift; sourceTree = "<group>"; };
+		E1AF6D932AC51EEB009EE1A0 /* CourseTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseTableViewCell.swift; sourceTree = "<group>"; };
+		E1AF6D942AC51EEB009EE1A0 /* CourseTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CourseTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,6 +137,8 @@
 			children = (
 				E16515F02AC0769E00CE4AA5 /* StudentTableViewCell.swift */,
 				E16515F12AC0769E00CE4AA5 /* StudentTableViewCell.xib */,
+				E1AF6D932AC51EEB009EE1A0 /* CourseTableViewCell.swift */,
+				E1AF6D942AC51EEB009EE1A0 /* CourseTableViewCell.xib */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -144,10 +156,10 @@
 		E165161C2AC17DE600CE4AA5 /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
-				E165161D2AC17DFF00CE4AA5 /* Poppins-Black.ttf */,
-				E16516242AC17DFF00CE4AA5 /* Poppins-Bold.ttf */,
-				E16516212AC17DFF00CE4AA5 /* Poppins-Regular.ttf */,
-				E16516272AC17DFF00CE4AA5 /* Poppins-SemiBold.ttf */,
+				E1AF6D872AC4244D009EE1A0 /* Poppins-Black.ttf */,
+				E1AF6D862AC4244D009EE1A0 /* Poppins-Bold.ttf */,
+				E1AF6D852AC4244C009EE1A0 /* Poppins-Regular.ttf */,
+				E1AF6D842AC4244C009EE1A0 /* Poppins-SemiBold.ttf */,
 			);
 			path = Fonts;
 			sourceTree = "<group>";
@@ -173,6 +185,7 @@
 		E18DD7942ABE85E500CA8AB7 /* MultiModuleRefactor */ = {
 			isa = PBXGroup;
 			children = (
+				E1AF6D6F2AC40B3D009EE1A0 /* TabBar */,
 				E165161C2AC17DE600CE4AA5 /* Fonts */,
 				E18DD7B32ABE8EC800CA8AB7 /* Features */,
 				E18DD7952ABE85E500CA8AB7 /* AppDelegate.swift */,
@@ -186,6 +199,7 @@
 		E18DD7B32ABE8EC800CA8AB7 /* Features */ = {
 			isa = PBXGroup;
 			children = (
+				E1AF6D752AC40E2E009EE1A0 /* Main */,
 				E18DD7B42ABE8ED600CA8AB7 /* Home */,
 			);
 			path = Features;
@@ -204,6 +218,39 @@
 				E16515E22AC068CC00CE4AA5 /* HomeInteractor.swift */,
 			);
 			path = Home;
+			sourceTree = "<group>";
+		};
+		E1AF6D6F2AC40B3D009EE1A0 /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				E1AF6D8D2AC427A0009EE1A0 /* Item */,
+				E1AF6D8C2AC42772009EE1A0 /* Controller */,
+			);
+			path = TabBar;
+			sourceTree = "<group>";
+		};
+		E1AF6D752AC40E2E009EE1A0 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		E1AF6D8C2AC42772009EE1A0 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				E1AF6D702AC40B49009EE1A0 /* CustomTabBarController.swift */,
+				E1AF6D722AC40BCD009EE1A0 /* CustomTabBar+Delegate.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		E1AF6D8D2AC427A0009EE1A0 /* Item */ = {
+			isa = PBXGroup;
+			children = (
+				E1AF6D8E2AC427B6009EE1A0 /* TabBarItem.swift */,
+			);
+			path = Item;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -267,14 +314,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E165163A2AC17E0000CE4AA5 /* Poppins-SemiBold.ttf in Resources */,
+				E1AF6D8B2AC4244D009EE1A0 /* Poppins-Black.ttf in Resources */,
+				E1AF6D882AC4244D009EE1A0 /* Poppins-SemiBold.ttf in Resources */,
 				E18DD7A22ABE85E900CA8AB7 /* LaunchScreen.storyboard in Resources */,
+				E1AF6D8A2AC4244D009EE1A0 /* Poppins-Bold.ttf in Resources */,
 				E18DD79F2ABE85E900CA8AB7 /* Assets.xcassets in Resources */,
+				E1AF6D892AC4244D009EE1A0 /* Poppins-Regular.ttf in Resources */,
+				E1AF6D962AC51EEB009EE1A0 /* CourseTableViewCell.xib in Resources */,
 				E16515EA2AC06A9D00CE4AA5 /* HomeViewController.xib in Resources */,
-				E16516342AC17E0000CE4AA5 /* Poppins-Regular.ttf in Resources */,
-				E16516372AC17E0000CE4AA5 /* Poppins-Bold.ttf in Resources */,
 				E16515F32AC0769E00CE4AA5 /* StudentTableViewCell.xib in Resources */,
-				E16516302AC17E0000CE4AA5 /* Poppins-Black.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -332,8 +380,12 @@
 				E18DD7962ABE85E500CA8AB7 /* AppDelegate.swift in Sources */,
 				E16515E42AC068CC00CE4AA5 /* HomeWorker.swift in Sources */,
 				E16515E82AC068CC00CE4AA5 /* HomeInteractor.swift in Sources */,
+				E1AF6D712AC40B49009EE1A0 /* CustomTabBarController.swift in Sources */,
+				E1AF6D952AC51EEB009EE1A0 /* CourseTableViewCell.swift in Sources */,
 				E16515D92AC0651900CE4AA5 /* HomeNetworkConfiguration.swift in Sources */,
+				E1AF6D732AC40BCD009EE1A0 /* CustomTabBar+Delegate.swift in Sources */,
 				E16515E62AC068CC00CE4AA5 /* HomeModels.swift in Sources */,
+				E1AF6D8F2AC427B6009EE1A0 /* TabBarItem.swift in Sources */,
 				E16515EF2AC0742700CE4AA5 /* HomeViewController+TableView.swift in Sources */,
 				E16515E72AC068CC00CE4AA5 /* HomeViewController.swift in Sources */,
 				E16515E52AC068CC00CE4AA5 /* HomeRouter.swift in Sources */,
@@ -476,6 +528,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 68X5SYLHZW;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = MultiModuleRefactor/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -503,6 +556,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 68X5SYLHZW;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = MultiModuleRefactor/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;

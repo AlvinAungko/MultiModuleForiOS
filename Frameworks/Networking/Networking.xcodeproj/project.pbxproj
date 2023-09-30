@@ -17,6 +17,8 @@
 		E18DD76A2ABE851C00CA8AB7 /* Networking.h in Headers */ = {isa = PBXBuildFile; fileRef = E18DD75C2ABE851B00CA8AB7 /* Networking.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E18DD7AA2ABE8AE400CA8AB7 /* Utilities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E18DD7A92ABE8AE400CA8AB7 /* Utilities.framework */; };
 		E18DD7AB2ABE8AE400CA8AB7 /* Utilities.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E18DD7A92ABE8AE400CA8AB7 /* Utilities.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		E1AF6DC62AC6B155009EE1A0 /* CombineNetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1AF6DC52AC6B155009EE1A0 /* CombineNetworkManager.swift */; };
+		E1AF6DC92AC6B2FE009EE1A0 /* NetworkHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1AF6DC82AC6B2FE009EE1A0 /* NetworkHelper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +58,8 @@
 		E18DD75D2ABE851B00CA8AB7 /* Networking.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = Networking.docc; sourceTree = "<group>"; };
 		E18DD7632ABE851B00CA8AB7 /* NetworkingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NetworkingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E18DD7A92ABE8AE400CA8AB7 /* Utilities.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Utilities.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E1AF6DC52AC6B155009EE1A0 /* CombineNetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CombineNetworkManager.swift; sourceTree = "<group>"; };
+		E1AF6DC82AC6B2FE009EE1A0 /* NetworkHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkHelper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +122,7 @@
 			isa = PBXGroup;
 			children = (
 				E16515D62AC022F700CE4AA5 /* NetworkManager.swift */,
+				E1AF6DC52AC6B155009EE1A0 /* CombineNetworkManager.swift */,
 			);
 			path = NetworkManager;
 			sourceTree = "<group>";
@@ -152,6 +157,7 @@
 		E18DD75B2ABE851B00CA8AB7 /* Networking */ = {
 			isa = PBXGroup;
 			children = (
+				E1AF6DC72AC6B2F1009EE1A0 /* Helper */,
 				E16515DA2AC0661400CE4AA5 /* Constants */,
 				E16515D52AC022E500CE4AA5 /* NetworkManager */,
 				E16515D02AC021CA00CE4AA5 /* NetworkConfiguration */,
@@ -160,6 +166,14 @@
 				E18DD75D2ABE851B00CA8AB7 /* Networking.docc */,
 			);
 			path = Networking;
+			sourceTree = "<group>";
+		};
+		E1AF6DC72AC6B2F1009EE1A0 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				E1AF6DC82AC6B2FE009EE1A0 /* NetworkHelper.swift */,
+			);
+			path = Helper;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -298,11 +312,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E1AF6DC92AC6B2FE009EE1A0 /* NetworkHelper.swift in Sources */,
 				E16515D72AC022F700CE4AA5 /* NetworkManager.swift in Sources */,
 				E16515DC2AC0662400CE4AA5 /* Constants.swift in Sources */,
 				E16515D22AC021FD00CE4AA5 /* Configuration.swift in Sources */,
 				E18DD75E2ABE851B00CA8AB7 /* Networking.docc in Sources */,
 				E16515CF2AC021A200CE4AA5 /* Logger.swift in Sources */,
+				E1AF6DC62AC6B155009EE1A0 /* CombineNetworkManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -448,9 +464,11 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 5F721A4F764F93E08492D46F /* Pods-Networking.debug.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 68X5SYLHZW;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -476,9 +494,11 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 187765B75EEB2CF159C237AC /* Pods-Networking.release.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 68X5SYLHZW;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";

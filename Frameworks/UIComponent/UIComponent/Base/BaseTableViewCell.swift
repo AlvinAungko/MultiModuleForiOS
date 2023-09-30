@@ -10,7 +10,7 @@ import UIKit
 
 open class BaseTableViewCell<T: Any>: UITableViewCell {
     
-    var item: T? {
+    open var item: T? {
         didSet {
             if let item = item {
                 self.bindData(item)

@@ -30,7 +30,7 @@ public protocol Configuration {
     var data: Data? { get }
 }
 
-public struct ServiceError: Error {
+public struct ServiceError: Error, Equatable {
     
     public let issueCode: IssueCode
     
@@ -56,7 +56,7 @@ public struct ServiceError: Error {
 }
 
 // swiftlint:disable all
-public enum IssueCode {
+public enum IssueCode: Equatable {
     case UNAUTHORIZED
     case SESSION_EXPIRE
     case SESSION_NOT_FOUND

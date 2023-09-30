@@ -15,7 +15,7 @@ open class BaseNetworking {
     open func fetchData<M: Decodable>(configuration: Configuration,
                                       responseType: M.Type,
                                       completion: @escaping (Result<M, ServiceError>) -> Void) {
-        let parameters = generateParams(task: configuration.task)
+        let parameters = NetworkHelper.shared.generateParams(task: configuration.task)
         let url = configuration.baseURL + configuration.path.escape()
         guard var components = URLComponents(string: url) else {
             completion(.failure(.urlError))
@@ -60,7 +60,7 @@ open class BaseNetworking {
                     return
                 }
                 
-                guard self.isSuccess(httpResponse.statusCode) else {
+                guard NetworkHelper.shared.isSuccess(httpResponse.statusCode) else {
                     /// `Refresh token logic`
                     /// We can handle refresh token logic here
                     /// Because this is a test project, so I will not handle this
@@ -93,7 +93,7 @@ private extension BaseNetworking {
         request.httpMethod = method
         request.setValue("application/json", forHTTPHeaderField: "Content-Type")
         request.setValue("application/json", forHTTPHeaderField: "Accept")
-//        request.setValue("Bearer 35d715a8897b1c23d077afc0ba2dd4001e6289ff4fc405d151eeb2bb0016a892d43ce810b7f9b7aa42b50f1e9ece0db01e5c7ca5093203ed476afe5a57554d5bb30bccca7b4ab0656657f444465327b4326c0c9da13010e33be3ccf0226188a6eccfccfa688001634c14d4862ca496c5ea1cef72943143685fc8a104854c308b", forHTTPHeaderField: "Authorization")
+        //        request.setValue("Bearer 35d715a8897b1c23d077afc0ba2dd4001e6289ff4fc405d151eeb2bb0016a892d43ce810b7f9b7aa42b50f1e9ece0db01e5c7ca5093203ed476afe5a57554d5bb30bccca7b4ab0656657f444465327b4326c0c9da13010e33be3ccf0226188a6eccfccfa688001634c14d4862ca496c5ea1cef72943143685fc8a104854c308b", forHTTPHeaderField: "Authorization")
         request.httpBody = nil
         
         for (key, value) in headers ?? [:] {
@@ -101,23 +101,5 @@ private extension BaseNetworking {
         }
         
         return request
-    }
-    
-    func generateParams(task: Task) -> ([String: Any], ParameterEncoding) {
-        switch task {
-        case .requestPlain:
-            return ([:], URLEncoding.default)
-        case let .requestParameters(parameters, encoding):
-            return (parameters, encoding)
-        }
-    }
-    
-    func isSuccess(_ code: Int) -> Bool {
-        switch code {
-        case 200...304:
-            return true
-        default:
-            return false
-        }
     }
 }

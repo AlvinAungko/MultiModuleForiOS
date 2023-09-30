@@ -20,8 +20,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
     
     func setUpRootController() {
-        let vc = HomeViewController()
-        window?.rootViewController = vc
+        let controller = CustomTabBarController()
+        let nav = UINavigationController(rootViewController: controller)
+        window?.rootViewController = nav
     }
     
 }

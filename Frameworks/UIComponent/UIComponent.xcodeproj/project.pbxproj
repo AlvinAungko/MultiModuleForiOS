@@ -16,6 +16,8 @@
 		E16515C52AC0165900CE4AA5 /* BaseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E16515C42AC0165900CE4AA5 /* BaseTableViewCell.swift */; };
 		E16515C72AC0166E00CE4AA5 /* BaseCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E16515C62AC0166E00CE4AA5 /* BaseCollectionViewCell.swift */; };
 		E16515C92AC0168100CE4AA5 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E16515C82AC0168100CE4AA5 /* BaseViewController.swift */; };
+		E1AF6D9C2AC51F86009EE1A0 /* CourseInfoView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E1AF6D9B2AC51F86009EE1A0 /* CourseInfoView.xib */; };
+		E1AF6D9E2AC51F9D009EE1A0 /* CourseInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1AF6D9D2AC51F9D009EE1A0 /* CourseInfoView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -44,6 +46,8 @@
 		E16515C42AC0165900CE4AA5 /* BaseTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTableViewCell.swift; sourceTree = "<group>"; };
 		E16515C62AC0166E00CE4AA5 /* BaseCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCollectionViewCell.swift; sourceTree = "<group>"; };
 		E16515C82AC0168100CE4AA5 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		E1AF6D9B2AC51F86009EE1A0 /* CourseInfoView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CourseInfoView.xib; sourceTree = "<group>"; };
+		E1AF6D9D2AC51F9D009EE1A0 /* CourseInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseInfoView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +93,7 @@
 		E16515A62AC011B500CE4AA5 /* UIComponent */ = {
 			isa = PBXGroup;
 			children = (
+				E1AF6D972AC51F43009EE1A0 /* ReusableViews */,
 				E16515B32AC0136400CE4AA5 /* Base */,
 				E16515A72AC011B500CE4AA5 /* UIComponent.h */,
 				E16515A82AC011B500CE4AA5 /* UIComponent.docc */,
@@ -105,6 +110,23 @@
 				E16515C82AC0168100CE4AA5 /* BaseViewController.swift */,
 			);
 			path = Base;
+			sourceTree = "<group>";
+		};
+		E1AF6D972AC51F43009EE1A0 /* ReusableViews */ = {
+			isa = PBXGroup;
+			children = (
+				E1AF6D9A2AC51F6D009EE1A0 /* New Group */,
+			);
+			path = ReusableViews;
+			sourceTree = "<group>";
+		};
+		E1AF6D9A2AC51F6D009EE1A0 /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+				E1AF6D9B2AC51F86009EE1A0 /* CourseInfoView.xib */,
+				E1AF6D9D2AC51F9D009EE1A0 /* CourseInfoView.swift */,
+			);
+			path = "New Group";
 			sourceTree = "<group>";
 		};
 		F99EBBD2A57BC24E812ABDBD /* Pods */ = {
@@ -188,6 +210,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E1AF6D9C2AC51F86009EE1A0 /* CourseInfoView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -226,6 +249,7 @@
 				E16515C92AC0168100CE4AA5 /* BaseViewController.swift in Sources */,
 				E16515A92AC011B500CE4AA5 /* UIComponent.docc in Sources */,
 				E16515C72AC0166E00CE4AA5 /* BaseCollectionViewCell.swift in Sources */,
+				E1AF6D9E2AC51F9D009EE1A0 /* CourseInfoView.swift in Sources */,
 				E16515C52AC0165900CE4AA5 /* BaseTableViewCell.swift in Sources */,
 				E16515BF2AC0155B00CE4AA5 /* BaseView.swift in Sources */,
 			);
@@ -358,9 +382,11 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 3CD054F83C966E1CC9A73C3B /* Pods-UIComponent.debug.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 68X5SYLHZW;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -386,9 +412,11 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 2DCC0DD881C2C2CFF383E182 /* Pods-UIComponent.release.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 68X5SYLHZW;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
